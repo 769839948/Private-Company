@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
+    //测试项目；
     //hello world
     // Do any additional setup after loading the view, typically from a nib.
 }
