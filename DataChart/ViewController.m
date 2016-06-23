@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"title";
+//    self.tableview Cpntrpper\\\\
     // Do any additional setup after loading the view, typically from a nib.
 }
 
