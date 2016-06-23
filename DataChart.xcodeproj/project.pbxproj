@@ -13,6 +13,8 @@
 		1F457B6C1D1B7C8700C1D8EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F457B6A1D1B7C8700C1D8EC /* Main.storyboard */; };
 		1F457B6E1D1B7C8700C1D8EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F457B6D1D1B7C8700C1D8EC /* Assets.xcassets */; };
 		1F457B711D1B7C8700C1D8EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F457B6F1D1B7C8700C1D8EC /* LaunchScreen.storyboard */; };
+		1F457B831D1BB33E00C1D8EC /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F457B821D1BB33E00C1D8EC /* BaseNavigationController.m */; };
+		2442DDFBDBB955C3A5E4423E /* Pods_DataChart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B83A404033994BA99123313F /* Pods_DataChart.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,11 @@
 		1F457B6D1D1B7C8700C1D8EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F457B701D1B7C8700C1D8EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F457B721D1B7C8700C1D8EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F457B811D1BB33E00C1D8EC /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
+		1F457B821D1BB33E00C1D8EC /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
+		8B8F686D1CFDD4BA27E2FE0A /* Pods-DataChart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataChart.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DataChart/Pods-DataChart.debug.xcconfig"; sourceTree = "<group>"; };
+		B83A404033994BA99123313F /* Pods_DataChart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DataChart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6D8D144A6F7055C9003DB9B /* Pods-DataChart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataChart.release.xcconfig"; path = "Pods/Target Support Files/Pods-DataChart/Pods-DataChart.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2442DDFBDBB955C3A5E4423E /* Pods_DataChart.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,8 +50,15 @@
 		1F457B551D1B7C8700C1D8EC = {
 			isa = PBXGroup;
 			children = (
+				1F457B7B1D1BB27300C1D8EC /* Untils */,
+				1F457B801D1BB30B00C1D8EC /* BaseView */,
+				1F457B781D1BB25B00C1D8EC /* Home */,
+				1F457B791D1BB25B00C1D8EC /* Message */,
+				1F457B7A1D1BB25B00C1D8EC /* Mine */,
 				1F457B601D1B7C8700C1D8EC /* DataChart */,
 				1F457B5F1D1B7C8700C1D8EC /* Products */,
+				919BB1F7C7EC1C853F405A39 /* Pods */,
+				9B21A33EFDCDB7288B25CC37 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +94,121 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		1F457B781D1BB25B00C1D8EC /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				1F457B871D1BB36700C1D8EC /* ViewModel */,
+				1F457B861D1BB35A00C1D8EC /* Controller */,
+				1F457B851D1BB35300C1D8EC /* View */,
+				1F457B841D1BB34B00C1D8EC /* Model */,
+			);
+			name = Home;
+			path = DataChart/Home;
+			sourceTree = "<group>";
+		};
+		1F457B791D1BB25B00C1D8EC /* Message */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Message;
+			path = DataChart/Message;
+			sourceTree = "<group>";
+		};
+		1F457B7A1D1BB25B00C1D8EC /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Mine;
+			path = DataChart/Mine;
+			sourceTree = "<group>";
+		};
+		1F457B7B1D1BB27300C1D8EC /* Untils */ = {
+			isa = PBXGroup;
+			children = (
+				1F457B7C1D1BB2C500C1D8EC /* Category */,
+				1F457B7D1D1BB2C500C1D8EC /* Other */,
+				1F457B7E1D1BB2C500C1D8EC /* ThirdLib */,
+			);
+			name = Untils;
+			path = DataChart/Untils;
+			sourceTree = "<group>";
+		};
+		1F457B7C1D1BB2C500C1D8EC /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		1F457B7D1D1BB2C500C1D8EC /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		1F457B7E1D1BB2C500C1D8EC /* ThirdLib */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ThirdLib;
+			sourceTree = "<group>";
+		};
+		1F457B801D1BB30B00C1D8EC /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+				1F457B811D1BB33E00C1D8EC /* BaseNavigationController.h */,
+				1F457B821D1BB33E00C1D8EC /* BaseNavigationController.m */,
+			);
+			name = BaseView;
+			path = DataChart/BaseView;
+			sourceTree = "<group>";
+		};
+		1F457B841D1BB34B00C1D8EC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		1F457B851D1BB35300C1D8EC /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		1F457B861D1BB35A00C1D8EC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		1F457B871D1BB36700C1D8EC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		919BB1F7C7EC1C853F405A39 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8B8F686D1CFDD4BA27E2FE0A /* Pods-DataChart.debug.xcconfig */,
+				C6D8D144A6F7055C9003DB9B /* Pods-DataChart.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9B21A33EFDCDB7288B25CC37 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B83A404033994BA99123313F /* Pods_DataChart.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +216,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F457B751D1B7C8700C1D8EC /* Build configuration list for PBXNativeTarget "DataChart" */;
 			buildPhases = (
+				8BAD68C2388FAE24BCA6F781 /* 📦 Check Pods Manifest.lock */,
 				1F457B5A1D1B7C8700C1D8EC /* Sources */,
 				1F457B5B1D1B7C8700C1D8EC /* Frameworks */,
 				1F457B5C1D1B7C8700C1D8EC /* Resources */,
+				5DEE690CBBFC9BACF90B9ADC /* 📦 Embed Pods Frameworks */,
+				94EAF14DC30D341956212B61 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -144,11 +277,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5DEE690CBBFC9BACF90B9ADC /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DataChart/Pods-DataChart-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8BAD68C2388FAE24BCA6F781 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		94EAF14DC30D341956212B61 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DataChart/Pods-DataChart-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1F457B5A1D1B7C8700C1D8EC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F457B831D1BB33E00C1D8EC /* BaseNavigationController.m in Sources */,
 				1F457B691D1B7C8700C1D8EC /* ViewController.m in Sources */,
 				1F457B661D1B7C8700C1D8EC /* AppDelegate.m in Sources */,
 				1F457B631D1B7C8700C1D8EC /* main.m in Sources */,
@@ -261,9 +443,11 @@
 		};
 		1F457B761D1B7C8700C1D8EC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B8F686D1CFDD4BA27E2FE0A /* Pods-DataChart.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DataChart/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.meet.DataChart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -272,9 +456,11 @@
 		};
 		1F457B771D1B7C8700C1D8EC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6D8D144A6F7055C9003DB9B /* Pods-DataChart.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DataChart/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.meet.DataChart;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -300,6 +486,7 @@
 				1F457B771D1B7C8700C1D8EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
