@@ -18,6 +18,11 @@
     [super viewDidLoad];
     self.title = @"title";
 //    self.tableview Cpntrpper\\\\
+=======
+    self.view.backgroundColor = [UIColor whiteColor];
+//    s
+    //测试项目；
+    //hello world
     // Do any additional setup after loading the view, typically from a nib.
 }
 

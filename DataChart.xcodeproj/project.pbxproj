@@ -14,6 +14,7 @@
 		1F457B6E1D1B7C8700C1D8EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F457B6D1D1B7C8700C1D8EC /* Assets.xcassets */; };
 		1F457B711D1B7C8700C1D8EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F457B6F1D1B7C8700C1D8EC /* LaunchScreen.storyboard */; };
 		1F457B831D1BB33E00C1D8EC /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F457B821D1BB33E00C1D8EC /* BaseNavigationController.m */; };
+		1FBF3FCA1D1C4F29005DB46F /* HomeViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FBF3FC91D1C4F29005DB46F /* HomeViewViewController.m */; };
 		2442DDFBDBB955C3A5E4423E /* Pods_DataChart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B83A404033994BA99123313F /* Pods_DataChart.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +31,8 @@
 		1F457B721D1B7C8700C1D8EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F457B811D1BB33E00C1D8EC /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
 		1F457B821D1BB33E00C1D8EC /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
+		1FBF3FC81D1C4F29005DB46F /* HomeViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewViewController.h; sourceTree = SOURCE_ROOT; };
+		1FBF3FC91D1C4F29005DB46F /* HomeViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewViewController.m; sourceTree = SOURCE_ROOT; };
 		8B8F686D1CFDD4BA27E2FE0A /* Pods-DataChart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataChart.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DataChart/Pods-DataChart.debug.xcconfig"; sourceTree = "<group>"; };
 		B83A404033994BA99123313F /* Pods_DataChart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DataChart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6D8D144A6F7055C9003DB9B /* Pods-DataChart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DataChart.release.xcconfig"; path = "Pods/Target Support Files/Pods-DataChart/Pods-DataChart.release.xcconfig"; sourceTree = "<group>"; };
@@ -181,6 +184,8 @@
 		1F457B861D1BB35A00C1D8EC /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				1FBF3FC81D1C4F29005DB46F /* HomeViewViewController.h */,
+				1FBF3FC91D1C4F29005DB46F /* HomeViewViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -331,6 +336,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F457B831D1BB33E00C1D8EC /* BaseNavigationController.m in Sources */,
+				1FBF3FCA1D1C4F29005DB46F /* HomeViewViewController.m in Sources */,
 				1F457B691D1B7C8700C1D8EC /* ViewController.m in Sources */,
 				1F457B661D1B7C8700C1D8EC /* AppDelegate.m in Sources */,
 				1F457B631D1B7C8700C1D8EC /* main.m in Sources */,
